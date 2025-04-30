@@ -27,3 +27,22 @@ C. student.greeting()
 D. student['Favorite Teacher'].name
 E. student.courseLoad[0]
 
+Part2.13.:
+A. '3'+2 = '32', as + operator performs string concatenation after a string, and therefore converted the 2 into a string for the concatenation.
+B. '3'-2 = 1, as - operator only works for numerical minus, thus converted '3' into number 3.
+C. 3+null = 3, as null is the equivalence of number 0.
+D. '3'+null = '3null', as null has been autoconverted into its string equivalence "null" as + operator is performing string concatenation.
+E. true+3 = 4, as the numerical equivalence of true is 1.
+F. false+null = 0, as the numerical equivalence of both false and null are 0.
+G. '3'+undefined = '3undefined' s + operator performs string concatenation after string '3' and therefore converted undefined into its string equivalence 'undefined' for concatenation.
+H. '3'-undefined = NaN (not a number), as - operator only works for numerical minus, and there isn't a meaningful numerical equivalence for undefined, which results in NaN (not a number).
+
+Part2.14.:
+A. '2'>1 is true, which '2' is converted into number 2.
+B. '2'<'12' is false, as in string (lexicographic) comparison, '2' comes after '1', so '2' is after, or larger, than '12'.
+C. 2=='2' is true, as == performs type casting and '2' is casted as numerical 2.
+D. 2==='2' is false, as === don't perform type casting and thus 2 and '2' are in different types.
+E. true==2 is false, as the numerical equivalence of true is 1.
+F. true===Boolean(2) is true, as Boolean(2) converts 2 to true as 2 is a non-zero number.
+
+Part2.15.: == performs type casting when comparing values of different type, while === does not, which counts in type difference in comparison. Therefore, it's possible for == to return true when comparing values of different type, but impossible for === as it strictly requires identical type.
