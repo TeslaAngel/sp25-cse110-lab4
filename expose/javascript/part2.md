@@ -46,3 +46,8 @@ E. true==2 is false, as the numerical equivalence of true is 1.
 F. true===Boolean(2) is true, as Boolean(2) converts 2 to true as 2 is a non-zero number.
 
 Part2.15.: == performs type casting when comparing values of different type, while === does not, which counts in type difference in comparison. Therefore, it's possible for == to return true when comparing values of different type, but impossible for === as it strictly requires identical type.
+
+Part2.17.: In this scenario, callback references a delegate to the function doSomething(num), which returns a number that is double the value of the inputing num.
+In this call of modifyArray, other than doSomething(num) is input as callback input, an array \[1,2,3\] is also entered as array input. The function creates a new array and populate it with every element of array \[1,2,3\] after they were processed by doSomething(num) at the original order, which results in a new array of \[2,4,6\].
+
+Part2.19.: The output is 1 4 3 2. The output of 1 and 4 are executed at the current event cycle, so they appear first. The output of 3, however, despite having a timeout for only 0ms, it has to be executed at the next event cycle, thus comes after 1 and 4. 2 came last as it has the longest timeout, which is 1000ms.
