@@ -1,0 +1,2 @@
+1. The entered numbers are being recognized as string, and they directly entered calculation without being casted to numbers, which results in string concatenation instead of numerical summation.
+2. use Number() to cast the num1 and num2 to number datatype right after input. See expand\screenshots\fix.png
